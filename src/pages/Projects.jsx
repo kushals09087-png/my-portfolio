@@ -20,7 +20,7 @@ return (
                         className={cat === activeFilter ? 'filter-btn active' : 'filter-btn'}
                         onClick={() => setActiveFilter(cat)}
                     >
-                        {cat.toUpperCase()}
+                        <><span className='filter-icon'>◈</span>{cat.charAt(0).toUpperCase()+cat.slice(1)}</>
                     </button>
                 ))}
             </div>
